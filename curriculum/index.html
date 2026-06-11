@@ -28,10 +28,6 @@
             font-family: 'Segoe UI', sans-serif;
         }
 
-        section {
-            flex: 1;
-        }
-
         .btn-roxo {
             background: linear-gradient(45deg, #7b2ff7, #9b4dff);
             color: white;
@@ -159,158 +155,164 @@
         </div>
     </nav>
 
-    <!-- Dropdown + sobre mim -->
-    <div class="d-flex align-items-center gap-3 m-3">
+    <main style="flex: 1;">
+        <!-- Dropdown + sobre mim -->
+        <div class="d-flex align-items-center gap-3 m-3">
 
-        <div class="dropdown">
-            <button class="btn btn-light border dropdown-toggle px-4 py-2" type="button" data-bs-toggle="dropdown">
-                Menu Dropdown
+            <div class="dropdown">
+                <button class="btn btn-light border dropdown-toggle px-4 py-2" type="button" data-bs-toggle="dropdown">
+                    Menu Dropdown
+                </button>
+
+                <ul class="dropdown-menu shadow">
+                    <li><a class="dropdown-item" href="portifolio.html">Portfólio</a></li>
+                    <li><a class="dropdown-item" href="contato.html">Fale Conosco!</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Fechar</a></li>
+                </ul>
+            </div>
+
+            <button class="btn btn-danger px-3 py-1 rounded-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sobreMim">
+                Sobre mim
             </button>
 
-            <ul class="dropdown-menu shadow">
-                <li><a class="dropdown-item" href="portifolio.html">Portfólio</a></li>
-                <li><a class="dropdown-item" href="contato.html">Fale Conosco!</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Fechar</a></li>
-            </ul>
         </div>
 
-        <button class="btn btn-danger px-3 py-1 rounded-3" type="button" data-bs-toggle="collapse"
-            data-bs-target="#sobreMim">
-            Sobre mim
-        </button>
-
-    </div>
-
-    <!-- Sobre mim -->
-    <div class="collapse mt-3" id="sobreMim">
-        <div class="card card-body shadow mx-auto" style="max-width: 1100px;">
-            Sou uma pessoa interessada em adquirir novos conhecimentos, com grande curiosidade e disposição para
-            aprender. Possuo habilidade na condução de veículos, mantenho uma postura educada e profissional, e estou
-            sempre disponível para colaborar e atender às necessidades da equipe, contribuindo de forma responsável e
-            comprometida para o alcance dos objetivos da organização.
-        </div>
-    </div>
-
-    <!-- Ver Perfil -->
-    <div class="d-flex justify-content-center mt-4">
-        <button class="btn btn-dark-elegante px-4 py-2 rounded-3" type="button" data-bs-toggle="modal"
-            data-bs-target="#perfilModal">
-            Ver Perfil
-        </button>
-    </div>
-
-    <!-- Modal Perfil -->
-    <div class="modal fade" id="perfilModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content p-0 overflow-hidden">
-
-                <div class="text-center py-3">
-                    <img src="perfil.jpg" class="img-fluid" style="max-width: 250px; height: 300px; object-fit: cover;">
-                </div>
-
-                <div class="p-3 text-center">
-                    <h5 class="mb-1">Marcos Gabriel Olimpio Polo, 17 anos.</h5>
-                    <p class="mb-1">Aluno técnico de Desenvolvimento de Sistemas.</p>
-                    <p class="text-muted">Escola SENAI "Luiz Massa" - Botucatu-SP</p>
-                </div>
-
-                <button type="button" class="btn-close position-absolute top-0 end-0 m-3"
-                    data-bs-dismiss="modal"></button>
-
+        <!-- Sobre mim -->
+        <div class="collapse mt-3" id="sobreMim">
+            <div class="card card-body shadow mx-auto" style="max-width: 1100px;">
+                Sou uma pessoa interessada em adquirir novos conhecimentos, com grande curiosidade e disposição para
+                aprender. Possuo habilidade na condução de veículos, mantenho uma postura educada e profissional, e
+                estou
+                sempre disponível para colaborar e atender às necessidades da equipe, contribuindo de forma responsável
+                e
+                comprometida para o alcance dos objetivos da organização.
             </div>
         </div>
-    </div>
 
-    <!-- Accordion -->
-    <section>
-        <div class="accordion mt-4" id="accordionServicos">
+        <!-- Ver Perfil -->
+        <div class="d-flex justify-content-center mt-4">
+            <button class="btn btn-dark-elegante px-4 py-2 rounded-3" type="button" data-bs-toggle="modal"
+                data-bs-target="#perfilModal">
+                Ver Perfil
+            </button>
+        </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse1">
-                        Experiência Profissional
-                    </button>
-                </h2>
+        <!-- Modal Perfil -->
+        <div class="modal fade" id="perfilModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-0 overflow-hidden">
 
-                <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionServicos">
-                    <div class="accordion-body">
-                        Registro empregatício vinculado com a Usina Açucareira de São Manuel S.A.
+                    <div class="text-center py-3">
+                        <img src="perfil.jpg" class="img-fluid"
+                            style="max-width: 250px; height: 300px; object-fit: cover;">
+                    </div>
 
-                        <br><br>
+                    <div class="p-3 text-center">
+                        <h5 class="mb-1">Marcos Gabriel Olimpio Polo, 17 anos.</h5>
+                        <p class="mb-1">Aluno técnico de Desenvolvimento de Sistemas.</p>
+                        <p class="text-muted">Escola SENAI "Luiz Massa" - Botucatu-SP</p>
+                    </div>
 
-                        <strong>Atribuições:</strong>
-                        <ul>
-                            <li>Desenvolvimento Front-end</li>
-                            <li>Desenvolvimento Back-end</li>
-                            <li>Manipulação de Banco de Dados</li>
-                            <li>Prototipagem de projetos</li>
-                            <li>Elaboração de projetos na Escola Técnica <strong>SENAI</strong></li>
-                        </ul>
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal"></button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Accordion -->
+        <section>
+            <div class="accordion mt-4" id="accordionServicos">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1">
+                            Experiência Profissional
+                        </button>
+                    </h2>
+
+                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionServicos">
+                        <div class="accordion-body">
+                            Registro empregatício vinculado com a Usina Açucareira de São Manuel S.A.
+
+                            <br><br>
+
+                            <strong>Atribuições:</strong>
+                            <ul>
+                                <li>Desenvolvimento Front-end</li>
+                                <li>Desenvolvimento Back-end</li>
+                                <li>Manipulação de Banco de Dados</li>
+                                <li>Prototipagem de projetos</li>
+                                <li>Elaboração de projetos na Escola Técnica <strong>SENAI</strong></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse2">
-                        Habilidades
-                    </button>
-                </h2>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2">
+                            Habilidades
+                        </button>
+                    </h2>
 
-                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
-                    <div class="accordion-body">
-                        <strong>Soft Skills:</strong>
-                        <ul>
-                            <li>Trabalho em equipe e colaboração</li>
-                            <li>Empatia</li>
-                            <li>Adaptabilidade e gestão de tempo</li>
-                        </ul>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
+                        <div class="accordion-body">
+                            <strong>Soft Skills:</strong>
+                            <ul>
+                                <li>Trabalho em equipe e colaboração</li>
+                                <li>Empatia</li>
+                                <li>Adaptabilidade e gestão de tempo</li>
+                            </ul>
 
-                        <strong>Hard Skills:</strong>
-                        <ul>
-                            <li>Front-End</li>
-                            <li>Back-End</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>Figma</li>
-                            <li>Word</li>
-                            <li>Excel</li>
-                            <li>PowerPoint</li>
-                        </ul>
+                            <strong>Hard Skills:</strong>
+                            <ul>
+                                <li>Front-End</li>
+                                <li>Back-End</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>Figma</li>
+                                <li>Word</li>
+                                <li>Excel</li>
+                                <li>PowerPoint</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse3">
-                        Formação
-                    </button>
-                </h2>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3">
+                            Formação
+                        </button>
+                    </h2>
 
-                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
-                    <div class="accordion-body">
-                        Cursando o Ensino Médio e Curso Técnico em Desenvolvimento de Sistemas no Senai.
+                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
+                        <div class="accordion-body">
+                            Cursando o Ensino Médio e Curso Técnico em Desenvolvimento de Sistemas no Senai.
 
-                        <p class="mt-3 mb-1"><strong>Concluídos:</strong></p>
-                        <ul>
-                            <li>Excel Básico</li>
-                            <li>Competência Transversal - Segurança no Trabalho</li>
-                            <li>Ética na Inteligência Artificial</li>
-                            <li>EF Level 1 - Beginner - CEFR Level A1</li>
-                        </ul>
+                            <p class="mt-3 mb-1"><strong>Concluídos:</strong></p>
+                            <ul>
+                                <li>Excel Básico</li>
+                                <li>Competência Transversal - Segurança no Trabalho</li>
+                                <li>Ética na Inteligência Artificial</li>
+                                <li>EF Level 1 - Beginner - CEFR Level A1</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
-    </section>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer text-center">
