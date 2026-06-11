@@ -74,8 +74,8 @@
         section {
             display: flex;
             justify-content: center;
-            align-items: center;
             min-height: 70vh;
+            padding: 20px;
         }
 
         #gira {
@@ -95,6 +95,12 @@
             object-fit: contain;
             background-color: #fff;
             border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 300px;
+            }
         }
 
         .footer {
